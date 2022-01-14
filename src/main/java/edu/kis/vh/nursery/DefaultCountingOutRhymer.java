@@ -6,7 +6,7 @@ public class DefaultCountingOutRhymer {
 	public static final int INITIAL_NUMBERS_ARRAY_SIZE = -1;
 	public static final int CALLCHECK_ERROR = -1;
 
-	private int[] numbers = new int[NUMBERS_ARRAY_SIZE];
+	private final int[] numbers = new int[NUMBERS_ARRAY_SIZE];
 	public int total = INITIAL_NUMBERS_ARRAY_SIZE;
 
 	public void countIn(int in) {
