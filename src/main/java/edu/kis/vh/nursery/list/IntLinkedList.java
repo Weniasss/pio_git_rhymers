@@ -24,15 +24,6 @@ public class IntLinkedList {
 		return lastNode;
 	}
 
-
-	public void setLastNode(Node lastNode) {
-		this.lastNode = lastNode;
-	}
-
-	public void setNewElement(int newElement) {
-		this.newElement = newElement;
-	}
-
 	public boolean isEmpty() {
 		return lastNode == null;
 	}

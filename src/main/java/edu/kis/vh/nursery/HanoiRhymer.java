@@ -30,10 +30,6 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
 	public void setTotal(int total) {
 		super.setTotal(total);
 	}
-
-	public void setTotalRejected(int totalRejected) {
-		this.totalRejected = totalRejected;
-	}
 }
 
 // wiersze 5 12 14 15 były zle sformatowane
