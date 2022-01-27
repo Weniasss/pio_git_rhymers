@@ -10,10 +10,27 @@ public class IntLinkedList {
 		if (lastNode == null)
 			lastNode = new Node(i);
 		else {
-			lastNode.next = new Node(i);
-			lastNode.next.prev = lastNode;
-			lastNode = lastNode.next;
+			lastNode.setNext(new Node(i));
+			lastNode.getNext().setPrev(lastNode);
+			lastNode = lastNode.getNext();
 		}
+	}
+
+	public int getNewElement() {
+		return newElement;
+	}
+
+	public Node getLastNode() {
+		return lastNode;
+	}
+
+
+	public void setLastNode(Node lastNode) {
+		this.lastNode = lastNode;
+	}
+
+	public void setNewElement(int newElement) {
+		this.newElement = newElement;
 	}
 
 	public boolean isEmpty() {
@@ -27,14 +44,14 @@ public class IntLinkedList {
 	public int top() {
 		if (isEmpty())
 			return EMPTY_LIST_ERROR;
-		return lastNode.value;
+		return lastNode.getValue();
 	}
 
 	public int pop() {
 		if (isEmpty())
 			return EMPTY_LIST_ERROR;
-		int ret = lastNode.value;
-		lastNode = lastNode.prev;
+		int ret = lastNode.getValue();
+		lastNode = lastNode.getPrev();
 		return ret;
 	}
 

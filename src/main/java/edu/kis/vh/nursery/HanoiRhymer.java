@@ -16,6 +16,24 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
 		else
 			super.countIn(in);
 	}
+
+	@Override
+	public int getTotal() {
+		return super.getTotal();
+	}
+
+	public int getTotalRejected() {
+		return totalRejected;
+	}
+
+	@Override
+	public void setTotal(int total) {
+		super.setTotal(total);
+	}
+
+	public void setTotalRejected(int totalRejected) {
+		this.totalRejected = totalRejected;
+	}
 }
 
 // wiersze 5 12 14 15 były zle sformatowane
